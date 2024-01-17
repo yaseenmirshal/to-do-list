@@ -14,7 +14,6 @@ function App() {
   const handleButtonClick = () => {
     if (toDo.trim().length > 0) {
       const id = Date.now();
-
       setTodos([...toDos, { id, text: toDo, status: false }]);
       setTodo('');
     }
@@ -27,7 +26,6 @@ function App() {
       )
     );
   };
-
   return (
     <div className="app">
       <div className="mainHeading">
